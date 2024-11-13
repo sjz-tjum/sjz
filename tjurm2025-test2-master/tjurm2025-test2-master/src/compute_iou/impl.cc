@@ -18,8 +18,8 @@ float compute_iou(const cv::Rect& a, const cv::Rect& b) {
     */
     // IMPLEMENT YOUR CODE HERE
     cv::Rect jiao = a & b;  
-    int jiao = jiao.area();  
+    int jia = jiao.area();  
     int bing = a.area() + b.area() - jiao;   
-    float iou = static_cast<float>(jiao) /bing;  
+    float iou = static_cast<float>(jia) /bing;  
     return iou;  
 }
