@@ -47,11 +47,11 @@ std::unordered_map<int, cv::Rect> roi_color(const cv::Mat& input) {
             maxComponent = meanColor[1];
             colorKey = 1;
         }
-        if (meanColor[2] > maxComponent) {
+       else if (meanColor[2] > maxComponent) {
             colorKey = 2;
 
         }
-        if (colorKey != -1) {
+        else if (colorKey != -1) {
 
             res[colorKey] = rect;
 
