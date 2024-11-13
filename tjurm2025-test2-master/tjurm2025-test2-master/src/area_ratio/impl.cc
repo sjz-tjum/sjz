@@ -14,13 +14,13 @@ float compute_area_ratio(const std::vector<cv::Point>& contour) {
      * 运行测试点，通过即可。
      */
   
-float compute_area_ratio(const std::vector<cv::Point>& contour) {  
+
   
     double cArea = cv::contourArea(contour);  
     cv::Rect  s= cv::boundingRect(contour);  
     double rArea = s.area();  
     //if (rArea == 0) {  return 0.f;  } 我不知道这个要不要判断一下分母为零的情况，就注释掉了
     return static_cast<float>(cArea / rArea);  
-}
+
     return 0.f;
 }
