@@ -16,7 +16,7 @@ std::vector<std::vector<cv::Point>> find_contours(const cv::Mat& input) {
      * 通过条件：
      * 运行测试点，你找到的轮廓与答案的轮廓一样就行。
      */
-    std::vector<std::vector<cv::Point>> res;
+   std::vector<std::vector<cv::Point>> res;
     // IMPLEMENT YOUR CODE HERE
  
     cv::Mat gray;  
